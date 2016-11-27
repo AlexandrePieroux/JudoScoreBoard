@@ -1,0 +1,58 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.VBox?>
+<GridPane fx:id="container" fx:controller="view.controlScreen.newCombatForm.NewCombatController" xmlns:fx="http://javafx.com/fxml" id="combatForm" alignment="CENTER" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
+    <Text styleClass="msg" text="%TOOLBAR_combat" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+    <Label text="%LABEL_firstName" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+    <TextField fx:id="firstJudokaName" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+    <Label text="%LABEL_secondName" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+    <TextField fx:id="secondJudokaName" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+    <Label text="%LABEL_gender" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <VBox GridPane.columnIndex="1" GridPane.rowIndex="3" >
+        <RadioButton fx:id="maleRB" selected="true" userData="M" text="%LABEL_male">
+            <toggleGroup>
+                <ToggleGroup fx:id="genderToggleGroup" />
+            </toggleGroup>
+        </RadioButton>
+        <RadioButton fx:id="femaleRB" selected="false" userData="F" text="%LABEL_female" toggleGroup="$genderToggleGroup" />
+    </VBox>
+
+    <Label text="%LABEL_category" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <TextField fx:id="category" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+    <Label text="%LABEL_combatTime" GridPane.columnIndex="0" GridPane.rowIndex="5"/>
+    <HBox spacing="4" alignment="CENTER_LEFT" GridPane.columnIndex="1" GridPane.rowIndex="5">
+        <TextField fx:id="combatMinutes" prefColumnCount="1"/>
+        <Label text=":" />
+        <TextField fx:id="combatSeconds" prefColumnCount="2"/>
+    </HBox>
+
+    <Label text="%LABEL_immobilizationTime" GridPane.columnIndex="0" GridPane.rowIndex="6"/>
+    <TextField fx:id="immobilizationSeconds" prefColumnCount="2" GridPane.columnIndex="1" GridPane.rowIndex="6"/>
+
+    <HBox spacing="30" alignment="BOTTOM_CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="7" >
+        <padding><Insets top="40" right="0" bottom="0" left="0"/></padding>
+        <Button fx:id="okBtn" text="%CTRL_ok" styleClass="windowControl" prefHeight="60" prefWidth="60" />
+        <Button fx:id="cancelBtn" text="%CTRL_cancel" styleClass="windowControl" prefHeight="60" prefWidth="60" />
+    </HBox>
+
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</GridPane>

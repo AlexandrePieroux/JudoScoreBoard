@@ -1,0 +1,76 @@
+#window {
+    -fx-font-family: "Raleway-Light";
+    -fx-background-color: white;
+}
+
+#toolBar {
+    -fx-background-color: white;
+}
+
+#controls {
+    -fx-background-color: #2C3E50;
+    -fx-padding: 50 0;
+    -fx-spacing: 50;
+    -fx-font-size: 17pt;
+}
+
+.screens {
+    -fx-padding: 0 5;
+}
+
+.msg_screen_selection {
+    -fx-font-size: 15pt;
+    -fx-text-fill: grey;
+}
+
+.error_msg {
+    -fx-font-size: 15pt;
+    -fx-text-fill: #FF625B;
+}
+
+.display {
+    -fx-padding: 70;
+    -fx-border-color: black;
+    -fx-font-size: 12pt;
+    -fx-underline: false;
+}
+
+.hyperlink {
+    -fx-text-fill: black;
+}
+
+.hyperlink:hover {
+    -fx-border-color: black;
+}
+
+.hyperlink:visited {
+    -fx-border-style: solid;
+}
+
+.hyperlink:pressed {
+    -fx-border-style: solid;
+}
+
+.selected {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-background-color: white;
+    -fx-background-radius: 0;
+}
+
+.button:armed {
+}
+
+.ctrl_btn {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-border-color: #2C3E50;
+}
+
+.ctrl_btn:armed {
+    -fx-border-color: white;
+    -fx-background-color: #2C3E50;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:controller="view.configurationScreen.ConfigScreenController" id="window" xmlns:fx="http://javafx.com/fxml">
+    <top>
+        <ToolBar id="toolBar">
+                <Button fx:id="help" text="%CTRL_help" />
+        </ToolBar>
+    </top>
+
+    <center>
+        <VBox fx:id="vboxScreens" alignment="CENTER" spacing="50" />
+    </center>
+
+    <bottom>
+        <HBox id="controls" alignment="CENTER" >
+            <Button fx:id="ok" styleClass="ctrl_btn" text="%CTRL_ok" />
+            <Button fx:id="exit" styleClass="ctrl_btn" text="%CTRL_exit" />
+        </HBox>
+    </bottom>
+
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</BorderPane>

@@ -1,0 +1,9 @@
+#combatForm {
+    -fx-background-color: rgba(255, 255, 255, 0.94);
+    -fx-font-family: "Raleway-Light";
+}
+
+#msg {
+    -fx-font-size: 15pt;
+    -fx-fill: grey;
+}

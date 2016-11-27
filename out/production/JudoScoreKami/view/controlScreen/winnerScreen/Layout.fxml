@@ -1,0 +1,28 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.VBox?>
+
+<GridPane fx:id="container" fx:controller="view.controlScreen.winnerScreen.WinnerScreenController" xmlns:fx="http://javafx.com/fxml" id="combatForm" alignment="CENTER" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
+    <Text styleClass="msg" text="%WINNER_winner" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+    <Text fx:id="winnerName" id="winnerName" GridPane.columnIndex="0" GridPane.rowIndex="1" GridPane.columnSpan="2" />
+
+    <Text text="%WINNER_msg" id="helpMsg" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+
+    <VBox fx:id="winninOptions" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+
+    <HBox spacing="30" alignment="BOTTOM_CENTER" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="4" >
+        <padding><Insets top="40" right="0" bottom="0" left="0"/></padding>
+        <Button fx:id="okBtn" text="%CTRL_ok" styleClass="windowControl" prefHeight="60" prefWidth="60" />
+        <Button fx:id="cancelBtn" text="%CTRL_cancel" styleClass="windowControl" prefHeight="60" prefWidth="60" />
+    </HBox>
+
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</GridPane>
