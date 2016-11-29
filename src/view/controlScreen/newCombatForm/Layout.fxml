@@ -6,16 +6,12 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.control.Button?>
 <?import java.net.URL?>
-<?import javafx.scene.control.ChoiceBox?>
-<?import javafx.collections.FXCollections?>
-<?import java.lang.String?>
-
 <?import javafx.scene.control.ToggleGroup?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.layout.VBox?>
 <GridPane fx:id="container" fx:controller="view.controlScreen.newCombatForm.NewCombatController" xmlns:fx="http://javafx.com/fxml" id="combatForm" alignment="CENTER" hgap="10" vgap="10">
     <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
-    <Text styleClass="msg" text="%TOOLBAR_combat" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+    <Text text="%TOOLBAR_combat" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
 
     <Label text="%LABEL_firstName" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
     <TextField fx:id="firstJudokaName" GridPane.columnIndex="1" GridPane.rowIndex="1"/>

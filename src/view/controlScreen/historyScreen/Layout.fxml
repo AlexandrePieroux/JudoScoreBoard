@@ -1,0 +1,16 @@
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<GridPane fx:id="container" fx:controller="view.controlScreen.historyScreen.HistoryController" xmlns:fx="http://javafx.com/fxml" id="history" alignment="CENTER" hgap="10" vgap="10">
+    <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
+    <Text text="%HISTORY_msg" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+
+    <VBox fx:id="textBox"/>
+
+
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</GridPane>

@@ -1,0 +1,54 @@
+#window {
+    -fx-font-family: "Raleway-Light";
+}
+
+#toolBar {
+    -fx-background-color: #2C3E50;
+    -fx-margin: 0 0 10px 0;
+}
+
+.ctrl_btn {
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-border-color: #2C3E50;
+    -fx-font-size: 14px;
+}
+
+.ctrl_btn:hover {
+    -fx-border-color: white;
+}
+
+.ctrl_btn:armed {
+    -fx-border-color: white;
+}
+
+.windowControl {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 4,0,0,0 );
+    -fx-background-color: #E74C3C;
+    -fx-text-fill: white;
+    -fx-background-radius: 5em;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.windowControl:armed {
+    -fx-background-color: #B03A2E;
+}
+
+.windowControlSuspension{
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 4,0,0,0 );
+    -fx-background-color: #2980B9;
+    -fx-text-fill: white;
+    -fx-background-radius: 5em;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.windowControlSuspension:armed {
+    -fx-background-color: #205E87;
+}
+
+.msg {
+    -fx-font-size: 15pt;
+    -fx-text-fill: grey;
+}

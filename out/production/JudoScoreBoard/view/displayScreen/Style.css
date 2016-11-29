@@ -1,0 +1,51 @@
+.name1 {
+    -fx-font-weight: bolder;
+}
+
+#topRow{
+    -fx-background-color: white;
+}
+
+#middleRow {
+    -fx-background-color: #E74C3C;
+}
+
+.name2 {
+    -fx-fill: white;
+    -fx-text-fill: white;
+    -fx-font-weight: bolder;
+}
+
+.wazaari {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+.yuko {
+    -fx-fill: white;
+    -fx-font-weight: bold;
+}
+
+#bottomRow {
+    -fx-background-color: black;
+}
+
+.timer {
+    -fx-fill: #68FFED;
+    -fx-font-weight: bolder;
+}
+
+.timer2 {
+    -fx-fill: #E74C3C;
+    -fx-font-weight: bolder;
+}
+
+.gender {
+    -fx-fill: #68FFED;
+    -fx-font-weight: bolder;
+}
+
+.weight {
+    -fx-fill: #E8DE2A;
+    -fx-font-weight: bolder;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.text.Text?>
+<GridPane alignment="center" prefWidth="800.0" prefHeight="600.0" fx:controller="view.displayScreen.DisplayScreenController" xmlns:fx="http://javafx.com/fxml" >
+    <columnConstraints>
+        <ColumnConstraints percentWidth="100" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints prefHeight="33.3" vgrow="SOMETIMES" />
+        <RowConstraints prefHeight="33.3" vgrow="SOMETIMES" />
+        <RowConstraints prefHeight="33.3" vgrow="SOMETIMES" />
+    </rowConstraints>
+
+    <GridPane fx:id="topRow" id="topRow" GridPane.rowIndex="0">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20" />
+            <ColumnConstraints percentWidth="55" />
+            <ColumnConstraints percentWidth="25" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="30" />
+            <RowConstraints percentHeight="70" />
+        </rowConstraints>
+
+        <VBox fx:id="firstJudoka" GridPane.fillHeight="true" GridPane.rowIndex="0" GridPane.columnIndex="1" alignment="TOP_LEFT">
+            <Text fx:id="firstJudokaLabel" styleClass="name1" VBox.vgrow="ALWAYS" boundsType="VISUAL" />
+        </VBox>
+
+        <HBox fx:id="firstJudokaPoints" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.fillHeight="true" alignment="CENTER_RIGHT" >
+            <Text fx:id="firstJudokaWazaAri" style="-fx-font-weight: bold" text="0" textAlignment="CENTER" boundsType="VISUAL" />
+            <Text fx:id="firstJudokaYuko" style="-fx-font-weight: bold" text="0" textAlignment="CENTER" boundsType="VISUAL" />
+        </HBox>
+
+        <HBox fx:id="firstJudokaShido" alignment="CENTER" spacing="15" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.rowSpan="2" />
+    </GridPane>
+
+
+    <GridPane fx:id="middleRow" id="middleRow" GridPane.rowIndex="1">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20" />
+            <ColumnConstraints percentWidth="55" />
+            <ColumnConstraints percentWidth="25" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="70" />
+            <RowConstraints percentHeight="30" />
+        </rowConstraints>
+
+        <VBox fx:id="secondJudoka" GridPane.fillHeight="true" GridPane.columnIndex="1" GridPane.rowIndex="1" alignment="BOTTOM_LEFT">
+            <Text fx:id="secondJudokaLabel" styleClass="name2" VBox.vgrow="ALWAYS" boundsType="VISUAL" />
+        </VBox>
+
+        <HBox fx:id="secondJudokaPoints" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.fillHeight="true" alignment="CENTER_RIGHT" >
+            <Text fx:id="secondJudokaWazaAri" styleClass="wazaari" text="0" textAlignment="CENTER" boundsType="VISUAL" />
+            <Text fx:id="secondJudokaYuko" styleClass="yuko" text="0" textAlignment="CENTER" boundsType="VISUAL" />
+        </HBox>
+
+        <HBox fx:id="secondJudokaShido" alignment="CENTER" spacing="15" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.rowSpan="2" />
+    </GridPane>
+
+
+    <GridPane id="bottomRow" GridPane.rowIndex="2">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="20" />
+            <ColumnConstraints percentWidth="55" />
+            <ColumnConstraints percentWidth="25" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="100" />
+        </rowConstraints>
+
+
+        <VBox fx:id="category" GridPane.columnIndex="0" alignment="CENTER" spacing="20">
+            <Text fx:id="gender" styleClass="gender" VBox.vgrow="ALWAYS" boundsType="VISUAL" />
+            <Text fx:id="weight" styleClass="weight" VBox.vgrow="ALWAYS" boundsType="VISUAL" />
+        </VBox>
+
+        <HBox fx:id="combatTimer" GridPane.columnIndex="1" GridPane.rowIndex="0" GridPane.fillHeight="true" alignment="CENTER_RIGHT" >
+            <Text fx:id="combatMinutes" styleClass="timer" text="5" boundsType="VISUAL" />
+            <Text styleClass="timer" text=" " boundsType="VISUAL" />
+            <Text fx:id="combatSeconds" styleClass="timer" text="00" boundsType="VISUAL" />
+        </HBox>
+
+        <HBox fx:id="immobilizationTimer" GridPane.columnIndex="2" GridPane.rowIndex="0" GridPane.fillHeight="true" alignment="CENTER" >
+            <Text fx:id="immobilizationSeconds" styleClass="timer2" text="00" boundsType="VISUAL" />
+        </HBox>
+    </GridPane>
+
+
+    <stylesheets>
+        <URL value="@Style.css" />
+    </stylesheets>
+</GridPane>

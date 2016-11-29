@@ -82,7 +82,7 @@ public class ConfigOkHandler implements EventHandler<MouseEvent> {
         controlScreen.onCloseRequestProperty().setValue((WindowEvent e) -> Platform.exit());
 
         ownerStage.hide();
-        displayScreen.show();
+        //displayScreen.show();
         controlScreen.show();
     }
 }

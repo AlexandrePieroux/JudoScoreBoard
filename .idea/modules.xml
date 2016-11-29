@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JudoScoreKami.iml" filepath="$PROJECT_DIR$/JudoScoreKami.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JudoScoreBoard.iml" filepath="$PROJECT_DIR$/JudoScoreBoard.iml" />
     </modules>
   </component>
 </project>

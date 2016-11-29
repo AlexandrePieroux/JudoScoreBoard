@@ -2,6 +2,7 @@ package view.controlScreen.mainScreen.controlHandler;
 
 import controller.Controller;
 import javafx.event.EventHandler;
+import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
 
 /**
@@ -12,7 +13,7 @@ public class ControlImmobilizationHandler implements EventHandler<MouseEvent> {
     private Controller controller;
 
 
-    public ControlImmobilizationHandler(Controller controller){
+    public ControlImmobilizationHandler(Controller controller, Button combatClock){
         this.controller = controller;
     }
 

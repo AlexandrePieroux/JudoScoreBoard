@@ -51,8 +51,8 @@ public class ControlScreenController {
 
         // Creation of the handlers of the controls
         ScreenExitHandler exitHandler = new ScreenExitHandler();
-        ControlCombatStartHandler combatHandler = new ControlCombatStartHandler(controller);
-        ControlImmobilizationHandler immobilizationHandler = new ControlImmobilizationHandler(controller);
+        ControlCombatStartHandler combatHandler = new ControlCombatStartHandler(controller, this.immobilization);
+        ControlImmobilizationHandler immobilizationHandler = new ControlImmobilizationHandler(controller, this.combatClock);
         ControlImmobilizationSuspensionHandler suspensionHandler = new ControlImmobilizationSuspensionHandler(controller);
         ControlNewCombatHandler newCombatHandler = new ControlNewCombatHandler(this.newCombatFormController.getContainer());
         ScreenCancelWinningHandler cancelWinningHandler = new ScreenCancelWinningHandler(this.winnerFormController.getContainer());
@@ -63,8 +63,11 @@ public class ControlScreenController {
         setCtrl(controller, false);
 
         // Disable main control of the combat until it is initialized
-        this.combatClock.disableProperty().bind(controller.initProperty().not());
-        this.immobilization.disableProperty().bind(controller.initProperty().not());
+        this.combatClock.disableProperty().bind(Bindings.or(controller.initProperty().not(),
+                Bindings.or(controller.immobilizationTimerSuspendedProperty().not(), controller.combatSuspendedProperty())));
+        this.immobilization.disableProperty().bind(Bindings.or(controller.initProperty().not(),
+                Bindings.or(Bindings.and(controller.combatTimerSuspendedProperty(),
+                        controller.immobilizationTimerSuspendedProperty()), controller.combatSuspendedProperty())));
 
         // Button label
         controller.combatTimerSuspendedProperty().addListener((obs, o, n) -> {
