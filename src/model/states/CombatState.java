@@ -1,4 +1,4 @@
-package model;
+package model.states;
 
 import controller.clockTimer.ClockTimer;
 import javafx.beans.property.*;
@@ -10,8 +10,8 @@ public final class CombatState {
 
     private static final CombatState instance = new CombatState();
 
-    private final Judoka firstJudoka = new Judoka(null);
-    private final Judoka secondJudoka = new Judoka(null);
+    private final JudokaState firstJudoka = new JudokaState(null);
+    private final JudokaState secondJudoka = new JudokaState(null);
 
     private ReadOnlyBooleanWrapper maleGender = new ReadOnlyBooleanWrapper(this, "maleGender", true);
     private ReadOnlyIntegerWrapper weight = new ReadOnlyIntegerWrapper(this, "category", 0);
@@ -21,19 +21,19 @@ public final class CombatState {
 
     private ReadOnlyBooleanWrapper combatSuspended = new ReadOnlyBooleanWrapper(this, "combatSuspended", false);
 
-    private Judoka winner = null;
+    private JudokaState winner = null;
 
 
     // Getter and setter
-    public Judoka getFirstJudoka() {
+    public JudokaState getFirstJudoka() {
         return firstJudoka;
     }
 
-    public Judoka getSecondJudoka() {
+    public JudokaState getSecondJudoka() {
         return secondJudoka;
     }
 
-    public Judoka getWinner() {
+    public JudokaState getWinner() {
         return winner;
     }
 
@@ -61,7 +61,7 @@ public final class CombatState {
 
 
 
-    public void setWinner(Judoka winner) {
+    public void setWinner(JudokaState winner) {
         this.winner = winner;
     }
 

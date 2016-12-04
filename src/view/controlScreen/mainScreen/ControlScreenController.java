@@ -56,7 +56,7 @@ public class ControlScreenController {
         ControlImmobilizationSuspensionHandler suspensionHandler = new ControlImmobilizationSuspensionHandler(controller);
         ControlNewCombatHandler newCombatHandler = new ControlNewCombatHandler(this.newCombatFormController.getContainer());
         ScreenCancelWinningHandler cancelWinningHandler = new ScreenCancelWinningHandler(this.winnerFormController.getContainer());
-        ScreenOkWinningHandler okWinningHandler = new ScreenOkWinningHandler(this.winnerFormController.getContainer(), controller);
+        ScreenOkWinningHandler okWinningHandler = new ScreenOkWinningHandler(this.winnerFormController, controller);
 
         // Adding buttons to the control panel
         setCtrl(controller, true);

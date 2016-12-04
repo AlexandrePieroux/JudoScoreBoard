@@ -1,11 +1,11 @@
-package model;
+package model.states;
 
 import javafx.beans.property.*;
 
 /**
  * Created by alexp on 05-11-16.
  */
-public class Judoka {
+public class JudokaState {
 
     ReadOnlyStringWrapper name = new ReadOnlyStringWrapper(this, "nameProperty");
     ReadOnlyIntegerWrapper wazaAri = new ReadOnlyIntegerWrapper(this, "wazaAriProperty");
@@ -28,7 +28,7 @@ public class Judoka {
         return shido;
     }
 
-    public Judoka(String name){
+    public JudokaState(String name){
         this.name.setValue(name);
     }
 

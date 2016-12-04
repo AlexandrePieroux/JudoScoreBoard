@@ -3,6 +3,10 @@ package view.controlScreen.historyScreen;
 import javafx.fxml.FXML;
 import javafx.scene.layout.VBox;
 
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.ResourceBundle;
 
 /**
@@ -12,14 +16,4 @@ public class HistoryController {
 
     @FXML private VBox textBox;
 
-    private final ResourceBundle resources;
-
-    public HistoryController(){
-        this.resources = ResourceBundle.getBundle("resource.Resource");
-
-    }
-
-    public void read(){
-
-    }
 }

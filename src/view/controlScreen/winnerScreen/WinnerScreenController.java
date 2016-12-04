@@ -22,6 +22,7 @@ public class WinnerScreenController {
     @FXML private Button cancelBtn;
 
     private Controller controller;
+    private ToggleGroup group = new ToggleGroup();
 
     public GridPane getContainer() {
         return container;
@@ -50,19 +51,20 @@ public class WinnerScreenController {
         this.winnerName.setText(this.controller.winnerJudokaNameProperty().get());
 
         this.winninOptions.getChildren().clear();
-        ToggleGroup group = new ToggleGroup();
         ResourceBundle bundle = ResourceBundle.getBundle("resource.Resource");
 
 
         // Default ippon option
         RadioButton ippon = new RadioButton("Ippon");
-        ippon.setToggleGroup(group);
+        ippon.setUserData("Ippon");
+        ippon.setToggleGroup(this.group);
         this.getWinninOptions().getChildren().add(ippon);
 
         // Waza-Ari Awazate Ippon
         if(this.controller.winnerJudokaWazaAriProperty().get() == 1){
             RadioButton wazaAriWazate = new RadioButton("Waza-Ari Awazate Ippon");
-            wazaAriWazate.setToggleGroup(group);
+            wazaAriWazate.setUserData("Waza-Ari Awazate Ippon");
+            wazaAriWazate.setToggleGroup(this.group);
             this.getWinninOptions().getChildren().add(wazaAriWazate);
         }
 
@@ -70,13 +72,28 @@ public class WinnerScreenController {
         if(this.controller.firstJudokaShidoProperty().get() == 3 ||
                 this.controller.secondJudokaShidoProperty().get() == 3) {
             RadioButton hansokuMake = new RadioButton("Hansoku Make");
-            hansokuMake.setToggleGroup(group);
+            hansokuMake.setUserData("Hansoku Make");
+            hansokuMake.setToggleGroup(this.group);
             this.getWinninOptions().getChildren().add(hansokuMake);
+        }
+
+        // Timeout
+        if(this.controller.combatTimerSecondsProperty().get() == 0 &&
+                this.controller.combatTimerMinutesProperty().get() == 0){
+            RadioButton timeout = new RadioButton(bundle.getString("WINNER_timeout"));
+            timeout.setUserData("WINNER_timeout");
+            timeout.setToggleGroup(this.group);
+            this.getWinninOptions().getChildren().add(timeout);
         }
 
         // Default forfeit
         RadioButton forfeit = new RadioButton(bundle.getString("WINNER_forfeit"));
-        forfeit.setToggleGroup(group);
+        forfeit.setUserData("WINNER_forfeit");
+        forfeit.setToggleGroup(this.group);
         this.getWinninOptions().getChildren().add(forfeit);
+    }
+
+    public String getSubmitedWinningOptions(){
+        return this.group.getSelectedToggle().getUserData().toString();
     }
 }

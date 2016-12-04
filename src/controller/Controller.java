@@ -1,7 +1,8 @@
 package controller;
 
 import javafx.beans.property.*;
-import model.CombatState;
+import model.states.CombatState;
+import model.dataManager.DataManager;
 
 /**
  * Created by alexp on 26-10-16.
@@ -12,6 +13,7 @@ public final class Controller {
     private static final Controller instance = new Controller();
     private CombatState state = CombatState.getInstance();
     private ReadOnlyBooleanWrapper init = new ReadOnlyBooleanWrapper(this, "init", false);
+    private String winningCondition = "";
 
     // Properties
     // First judoka
@@ -260,8 +262,15 @@ public final class Controller {
         this.init.set(true);
     }
 
-    // TODO
     public void combatToHistory() {
+        DataManager.getInstance().currentCombatToRecord(this);
+    }
 
+    public void setWinningCondition(String winningCondition) {
+        this.winningCondition = winningCondition;
+    }
+
+    public String getWinningCondition() {
+        return winningCondition;
     }
 }
