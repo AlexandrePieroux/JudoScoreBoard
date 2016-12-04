@@ -3,42 +3,30 @@ package model.dataManager;
 import com.google.gson.Gson;
 import com.google.gson.stream.JsonWriter;
 import controller.Controller;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import model.records.CombatRecord;
 import model.records.JudokaRecord;
 
 import java.io.*;
 
+import java.text.SimpleDateFormat;
 import java.util.ResourceBundle;
 
 /**
  * Created by alexandrepieroux on 27/11/16.
  */
 public final class DataManager {
+
     private static final DataManager instance = new DataManager();
 
-    private JsonWriter fileWriter;
-    private BufferedReader fileReader;
-    private ResourceBundle resourceBundle;
     private Integer idCounter = 0;
-    private Gson gson = new Gson();
+    private ObservableList<CombatRecord> combats = FXCollections.observableArrayList();
+    private SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss - dd-MM-yyyy");
 
     private DataManager(){
         super();
-        this.resourceBundle = ResourceBundle.getBundle("resource.Resource");
-        FileWriter fileWriter;
-        FileReader fileReader;
-        try {
-            fileWriter = new FileWriter(this.resourceBundle.getString("data_historyFile"), true);
-            fileReader = new FileReader(this.resourceBundle.getString("data_historyFile"));
-            this.fileWriter = new JsonWriter(fileWriter);
-            this.fileWriter.setIndent("  ");
-            this.fileReader = new BufferedReader(fileReader);
 
-        } catch (IOException e) {
-            e.printStackTrace();
-            this.fileWriter = null;
-            this.fileReader = null;
-        }
     }
 
     public static DataManager getInstance(){
@@ -46,9 +34,29 @@ public final class DataManager {
     }
 
     public void currentCombatToRecord(Controller controller){
-        this.gson.toJson(getCurrentCombatRecord(controller), CombatRecord.class, this.fileWriter);
+        this.combats.add(getCurrentCombatRecord(controller));
+    }
+
+    public ObservableList<CombatRecord> retrieveHistory(){
+        return this.combats;
+    }
+
+    public void toJsonFile(){
+        Gson gson = new Gson();
+        ResourceBundle resourceBundle = ResourceBundle.getBundle("resource.Resource");
+        FileWriter fileWriter;
         try {
-            this.fileWriter.flush();
+            fileWriter = new FileWriter(resourceBundle.getString("data_historyFile"), true);
+            JsonWriter jsonWriter = new JsonWriter(fileWriter);
+            jsonWriter.setIndent("  ");
+            jsonWriter.beginArray();
+
+            for(CombatRecord c : this.combats)
+                gson.toJson(c, CombatRecord.class, jsonWriter);
+
+            jsonWriter.endArray();
+            jsonWriter.close();
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -78,6 +86,8 @@ public final class DataManager {
 
         currentCombat.setFirstJudoka(firstJudoka);
         currentCombat.setSecondJudoka(secondJudoka);
+
+        currentCombat.setDate(dateFormat.format(System.currentTimeMillis()));
         return currentCombat;
     }
 }

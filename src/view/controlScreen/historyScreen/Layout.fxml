@@ -1,15 +1,38 @@
 <?import javafx.scene.layout.GridPane?>
 <?import javafx.geometry.Insets?>
 <?import java.net.URL?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Text?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
 <GridPane fx:id="container" fx:controller="view.controlScreen.historyScreen.HistoryController" xmlns:fx="http://javafx.com/fxml" id="history" alignment="CENTER" hgap="10" vgap="10">
     <padding><Insets top="25" right="25" bottom="10" left="25" /></padding>
-    <Text text="%HISTORY_msg" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
+        <Text text="%HISTORY_msg" GridPane.columnIndex="0" GridPane.rowIndex="0" GridPane.columnSpan="2"/>
 
-    <VBox fx:id="textBox"/>
+        <TableView fx:id="table" GridPane.columnIndex="0" GridPane.rowIndex="1">
+            <columns>
+                <TableColumn fx:id="id" text="%HISTORY_id" />
+                <TableColumn fx:id="date" text="%HISTORY_date" />
+                <TableColumn fx:id="winner" text="%HISTORY_winner" />
 
+                <TableColumn fx:id="firstJudokaName" text="%HISTORY_firstJudokaName" />
+                <TableColumn fx:id="firstJudokaWazaAri" text="%HISTORY_firstJudokaWazaAri" />
+                <TableColumn fx:id="firstJudokaYuko" text="%HISTORY_firstJudokaYuko" />
+                <TableColumn fx:id="firstJudokaShido" text="%HISTORY_firstJudokaShido" />
 
+                <TableColumn fx:id="secondJudokaName" text="%HISTORY_secondJudokaName" />
+                <TableColumn fx:id="secondJudokaWazaAri" text="%HISTORY_secondJudokaWazaAri" />
+                <TableColumn fx:id="secondJudokaYuko" text="%HISTORY_secondJudokaYuko" />
+                <TableColumn fx:id="secondJudokaShido" text="%HISTORY_secondJudokaShido" />
+
+                <TableColumn fx:id="remainingTime" text="%HISTORY_remainingTime" />
+            </columns>
+        </TableView>
+
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="BOTTOM_CENTER">
+            <Button fx:id="okBtn" text="%CTRL_ok" styleClass="windowControl" prefHeight="60" prefWidth="60"/>
+        </HBox>
     <stylesheets>
         <URL value="@Style.css" />
     </stylesheets>

@@ -1,8 +1,12 @@
 package controller;
 
 import javafx.beans.property.*;
+import javafx.collections.ObservableList;
+import model.records.CombatRecord;
 import model.states.CombatState;
 import model.dataManager.DataManager;
+
+import java.util.LinkedList;
 
 /**
  * Created by alexp on 26-10-16.
@@ -264,6 +268,14 @@ public final class Controller {
 
     public void combatToHistory() {
         DataManager.getInstance().currentCombatToRecord(this);
+    }
+
+    public ObservableList<CombatRecord> getHistory(){
+        return DataManager.getInstance().retrieveHistory();
+    }
+
+    public void historyToJSONFile(){
+        DataManager.getInstance().toJsonFile();
     }
 
     public void setWinningCondition(String winningCondition) {

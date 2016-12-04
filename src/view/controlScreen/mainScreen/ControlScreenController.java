@@ -3,6 +3,7 @@ package view.controlScreen.mainScreen;
 import controller.Controller;
 import javafx.beans.binding.Bindings;
 import view.ScreenExitHandler;
+import view.controlScreen.historyScreen.HistoryController;
 import view.controlScreen.mainScreen.controlHandler.*;
 import view.controlScreen.winnerScreen.winningScreen.ScreenCancelWinningHandler;
 import view.controlScreen.winnerScreen.winningScreen.ScreenOkWinningHandler;
@@ -44,6 +45,7 @@ public class ControlScreenController {
     @FXML private DisplayScreenController controlDisplayController;
     @FXML private WinnerScreenController winnerFormController;
     @FXML private NoCombatScreenController noCombatScreenController;
+    @FXML private HistoryController historyScreenController;
 
     public void init(Controller controller){
         ResourceBundle resourceBundle = ResourceBundle.getBundle("resource.Resource");
@@ -57,6 +59,8 @@ public class ControlScreenController {
         ControlNewCombatHandler newCombatHandler = new ControlNewCombatHandler(this.newCombatFormController.getContainer());
         ScreenCancelWinningHandler cancelWinningHandler = new ScreenCancelWinningHandler(this.winnerFormController.getContainer());
         ScreenOkWinningHandler okWinningHandler = new ScreenOkWinningHandler(this.winnerFormController, controller);
+        ControlHistoryHandler controlHistoryHandler = new ControlHistoryHandler(this.historyScreenController);
+
 
         // Adding buttons to the control panel
         setCtrl(controller, true);
@@ -92,6 +96,7 @@ public class ControlScreenController {
         this.combatBtn.setOnMouseClicked(newCombatHandler);
         this.winnerFormController.getCancelBtn().setOnMouseClicked(cancelWinningHandler);
         this.winnerFormController.getOkBtn().setOnMouseClicked(okWinningHandler);
+        this.historyBtn.setOnMouseClicked(controlHistoryHandler);
 
         // Blocking access to controls when there is no combat set
         controller.initProperty().addListener((obs, o, n) ->{
@@ -109,6 +114,7 @@ public class ControlScreenController {
         this.controlDisplayController.init(controller);
         this.newCombatFormController.init(controller);
         this.winnerFormController.init(controller);
+        this.historyScreenController.init(controller);
     }
 
     private void setCtrl(Controller controller, boolean firstJudoka) {

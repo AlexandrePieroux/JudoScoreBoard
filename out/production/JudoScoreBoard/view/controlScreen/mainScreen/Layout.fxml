@@ -11,6 +11,8 @@
 
     <fx:include source="../newCombatForm/Layout.fxml" fx:id="newCombatForm" />
 
+    <fx:include source="../historyScreen/Layout.fxml" fx:id="historyScreen" />
+
     <BorderPane fx:id="scoreBoard" id="window" >
         <top>
             <VBox>

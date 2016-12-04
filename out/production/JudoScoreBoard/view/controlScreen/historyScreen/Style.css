@@ -2,3 +2,16 @@
     -fx-background-color: rgba(255, 255, 255, 0.94);
     -fx-font-family: "Raleway-Light";
 }
+
+.windowControl {
+    -fx-effect: dropshadow( gaussian , rgba(0,0,0,1) , 4,0,0,0 );
+    -fx-background-color: #2C3E50;
+    -fx-text-fill: white;
+    -fx-background-radius: 5em;
+    -fx-background-insets: 0px;
+    -fx-padding: 0px;
+}
+
+.windowControl:armed {
+    -fx-background-color: #1F2B38;
+}
