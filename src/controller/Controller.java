@@ -6,8 +6,6 @@ import model.records.CombatRecord;
 import model.states.CombatState;
 import model.dataManager.DataManager;
 
-import java.util.LinkedList;
-
 /**
  * Created by alexp on 26-10-16.
  */
@@ -241,6 +239,10 @@ public final class Controller {
 
     public void setWeight(int weight){
         this.state.weightProperty().setValue(weight);
+    }
+
+    public Integer getWeight(){
+        return this.state.weightProperty().get();
     }
 
 

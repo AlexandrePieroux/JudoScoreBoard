@@ -12,26 +12,29 @@
 
         <TableView fx:id="table" GridPane.columnIndex="0" GridPane.rowIndex="1">
             <columns>
-                <TableColumn fx:id="id" text="%HISTORY_id" />
                 <TableColumn fx:id="date" text="%HISTORY_date" />
+                <TableColumn fx:id="gender" text="%HISTORY_gender" />
+                <TableColumn fx:id="category" text="%HISTORY_category" />
                 <TableColumn fx:id="winner" text="%HISTORY_winner" />
+                <TableColumn fx:id="winnerBy" text="%HISTORY_winnerBy" />
 
                 <TableColumn fx:id="firstJudokaName" text="%HISTORY_firstJudokaName" />
-                <TableColumn fx:id="firstJudokaWazaAri" text="%HISTORY_firstJudokaWazaAri" />
-                <TableColumn fx:id="firstJudokaYuko" text="%HISTORY_firstJudokaYuko" />
-                <TableColumn fx:id="firstJudokaShido" text="%HISTORY_firstJudokaShido" />
+                <TableColumn fx:id="firstJudokaWazaAri" text="%HISTORY_judokaWazaAri" />
+                <TableColumn fx:id="firstJudokaYuko" text="%HISTORY_judokaYuko" />
+                <TableColumn fx:id="firstJudokaShido" text="%HISTORY_judokaShido" />
 
                 <TableColumn fx:id="secondJudokaName" text="%HISTORY_secondJudokaName" />
-                <TableColumn fx:id="secondJudokaWazaAri" text="%HISTORY_secondJudokaWazaAri" />
-                <TableColumn fx:id="secondJudokaYuko" text="%HISTORY_secondJudokaYuko" />
-                <TableColumn fx:id="secondJudokaShido" text="%HISTORY_secondJudokaShido" />
+                <TableColumn fx:id="secondJudokaWazaAri" text="%HISTORY_judokaWazaAri" />
+                <TableColumn fx:id="secondJudokaYuko" text="%HISTORY_judokaYuko" />
+                <TableColumn fx:id="secondJudokaShido" text="%HISTORY_judokaShido" />
 
                 <TableColumn fx:id="remainingTime" text="%HISTORY_remainingTime" />
             </columns>
         </TableView>
 
-        <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="BOTTOM_CENTER">
+        <HBox GridPane.columnIndex="0" GridPane.rowIndex="3" alignment="BOTTOM_CENTER" spacing="30">
             <Button fx:id="okBtn" text="%CTRL_ok" styleClass="windowControl" prefHeight="60" prefWidth="60"/>
+            <Button fx:id="saveBtn" text="%CTRL_save" styleClass="windowControl" prefHeight="60" prefWidth="60"/>
         </HBox>
     <stylesheets>
         <URL value="@Style.css" />

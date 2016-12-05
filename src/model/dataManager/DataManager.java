@@ -71,6 +71,16 @@ public final class DataManager {
         currentCombat.setWinnerName(controller.winnerJudokaNameProperty().get());
         currentCombat.setWinnerBy(controller.getWinningCondition());
 
+        currentCombat.setCategory(controller.getWeight());
+
+        String gender;
+        if(controller.genderProperty().get())
+            gender = "M";
+        else
+            gender = "F";
+
+        currentCombat.setGender(gender);
+
         JudokaRecord firstJudoka = new JudokaRecord();
         JudokaRecord secondJudoka = new JudokaRecord();
 

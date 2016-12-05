@@ -24,8 +24,6 @@ public class ScreenOkWinningHandler implements EventHandler<MouseEvent> {
         this.winningForm.getContainer().toBack();
         this.controller.setWinningCondition(this.winningForm.getSubmitedWinningOptions());
 
-        //TODO combat to history
-
         this.controller.combatToHistory();
     }
 }

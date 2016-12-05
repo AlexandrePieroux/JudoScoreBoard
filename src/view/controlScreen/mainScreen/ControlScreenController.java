@@ -26,28 +26,46 @@ import java.util.ResourceBundle;
  */
 public class ControlScreenController {
 
-    @FXML private StackPane container;
-    @FXML private BorderPane scoreBoard;
-    @FXML private GridPane newCombat;
+    @FXML
+    private StackPane container;
+    @FXML
+    private BorderPane scoreBoard;
+    @FXML
+    private GridPane newCombat;
 
-    @FXML private Button combatBtn;
-    @FXML private Button historyBtn;
-    @FXML private Button styleBtn;
-    @FXML private Button helpBtn;
-    @FXML private Button maximizeBtn;
-    @FXML private Button exitBtn;
-    @FXML private Button combatClock;
-    @FXML private Button immobilization;
-    @FXML private Button immobilizationSuspension;
+    @FXML
+    private Button combatBtn;
+    @FXML
+    private Button historyBtn;
+    @FXML
+    private Button styleBtn;
+    @FXML
+    private Button helpBtn;
+    @FXML
+    private Button maximizeBtn;
+    @FXML
+    private Button exitBtn;
+    @FXML
+    private Button combatClock;
+    @FXML
+    private Button immobilization;
+    @FXML
+    private Button immobilizationSuspension;
 
-    @FXML private GridPane controlDisplay;
-    @FXML private NewCombatController newCombatFormController;
-    @FXML private DisplayScreenController controlDisplayController;
-    @FXML private WinnerScreenController winnerFormController;
-    @FXML private NoCombatScreenController noCombatScreenController;
-    @FXML private HistoryController historyScreenController;
+    @FXML
+    private GridPane controlDisplay;
+    @FXML
+    private NewCombatController newCombatFormController;
+    @FXML
+    private DisplayScreenController controlDisplayController;
+    @FXML
+    private WinnerScreenController winnerFormController;
+    @FXML
+    private NoCombatScreenController noCombatScreenController;
+    @FXML
+    private HistoryController historyScreenController;
 
-    public void init(Controller controller){
+    public void init(Controller controller) {
         ResourceBundle resourceBundle = ResourceBundle.getBundle("resource.Resource");
 
 
@@ -75,14 +93,14 @@ public class ControlScreenController {
 
         // Button label
         controller.combatTimerSuspendedProperty().addListener((obs, o, n) -> {
-            if(n)
+            if (n)
                 this.combatClock.setText(resourceBundle.getString("TOOLBAR_clock_resume"));
             else
                 this.combatClock.setText(resourceBundle.getString("TOOLBAR_clock_stop"));
         });
 
         controller.immobilizationTimerSuspendedProperty().addListener((obs, o, n) -> {
-            if(n)
+            if (n)
                 this.immobilization.setText(resourceBundle.getString("TOOLBAR_clock_immobilization"));
             else
                 this.immobilization.setText(resourceBundle.getString("TOOLBAR_clock_liberation"));
@@ -99,8 +117,8 @@ public class ControlScreenController {
         this.historyBtn.setOnMouseClicked(controlHistoryHandler);
 
         // Blocking access to controls when there is no combat set
-        controller.initProperty().addListener((obs, o, n) ->{
-            if(n)
+        controller.initProperty().addListener((obs, o, n) -> {
+            if (n)
                 this.noCombatScreenController.getContainer().toBack();
             else
                 this.noCombatScreenController.getContainer().toFront();
@@ -126,7 +144,7 @@ public class ControlScreenController {
         GridPane row;
         HBox shidoBox;
 
-        if(firstJudoka){
+        if (firstJudoka) {
             judokaBox = this.controlDisplayController.getFirstJudokaPoints();
             wazaAri = this.controlDisplayController.getFirstJudokaWazaAri();
             yuko = this.controlDisplayController.getFirstJudokaYuko();
@@ -150,6 +168,8 @@ public class ControlScreenController {
         winBtn.setPrefHeight(70);
         winBtn.setStyle("-fx-font-size: 15px;");
         winBtn.setOnMouseClicked(winnerHandler);
+        winBtn.disableProperty().bind(Bindings.or(controller.combatTimerSuspendedProperty().not(),
+                Bindings.and(controller.combatTimerSuspendedProperty(), controller.immobilizationTimerSuspendedProperty().not())));
 
         judokaWin.getChildren().add(winBtn);
         judokaWin.setAlignment(Pos.CENTER);
@@ -229,7 +249,7 @@ public class ControlScreenController {
         yukoCtrl.setAlignment(Pos.CENTER_RIGHT);
 
         // Setting handlers
-        if(firstJudoka){
+        if (firstJudoka) {
             incShido.setOnMouseClicked((MouseEvent e) -> controller.incFirstJudokaShidoProperty());
             wazaAriInc.setOnMouseClicked((MouseEvent e) -> controller.incFirstJudokaWazaAriProperty());
             yukoInc.setOnMouseClicked((MouseEvent e) -> controller.incFirstJudokaYukoProperty());
