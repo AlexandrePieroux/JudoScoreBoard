@@ -245,18 +245,6 @@ public final class Controller {
         return this.state.weightProperty().get();
     }
 
-
-    // Private constructor
-    private Controller (){
-        super();
-    }
-
-    public static Controller getInstance(){
-        return instance;
-    }
-
-
-    // New Combat
     public void newCombat(String firstJudokaName, String secondJudoka){
         this.state.getFirstJudoka().reset();
         this.state.getFirstJudoka().nameProperty().setValue(firstJudokaName);
@@ -266,6 +254,27 @@ public final class Controller {
 
         this.state.setWinner(null);
         this.init.set(true);
+    }
+
+    public void resetCombat(){
+        this.state.getFirstJudoka().reset();
+        this.state.getSecondJudoka().reset();
+        this.state.setWinner(null);
+        this.init.set(false);
+        this.state.weightProperty().set(0);
+        this.state.combatSuspendedProperty().set(false);
+        this.state.getCombatTimer().setTime(0);
+        this.state.getImmobilizationTimer().setTime(0);
+        this.state.maleGenderProperty().set(true);
+    }
+
+    // Private constructor
+    private Controller (){
+        super();
+    }
+
+    public static Controller getInstance(){
+        return instance;
     }
 
     public void combatToHistory() {

@@ -21,9 +21,13 @@ public class ScreenOkWinningHandler implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
+        if(this.controller.initProperty().not().get())
+            return;
+
         this.winningForm.getContainer().toBack();
         this.controller.setWinningCondition(this.winningForm.getSubmitedWinningOptions());
 
         this.controller.combatToHistory();
+        this.controller.resetCombat();
     }
 }

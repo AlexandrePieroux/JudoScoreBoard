@@ -42,5 +42,7 @@ public class ScreenOkFormHandler implements EventHandler<MouseEvent> {
         this.controller.resumeCombat();
 
         this.formController.getContainer().toBack();
+        this.formController.getFirstJudokaName().setText("");
+        this.formController.getSecondJudokaName().setText("");
     }
 }
