@@ -53,7 +53,7 @@ public class HistoryController {
         this.firstJudokaShido.setCellValueFactory(r -> r.getValue().getFirstJudoka().shidoProperty());
 
         this.secondJudokaName.setCellValueFactory(r -> r.getValue().getSecondJudoka().nameProperty());
-        this.secondJudokaWazaAri.setCellValueFactory(r -> r.getValue().getFirstJudoka().wazaAriProperty());
+        this.secondJudokaWazaAri.setCellValueFactory(r -> r.getValue().getSecondJudoka().wazaAriProperty());
         this.secondJudokaYuko.setCellValueFactory(r -> r.getValue().getSecondJudoka().yukoProperty());
         this.secondJudokaShido.setCellValueFactory(r -> r.getValue().getSecondJudoka().shidoProperty());
 

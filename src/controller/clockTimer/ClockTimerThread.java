@@ -53,7 +53,10 @@ public class ClockTimerThread extends Thread{
     public synchronized void setTime(long time){
         this.suspended.setValue(true);
         if(this.increase) {
+            this.time = 0;
             this.timeLimit = time;
+            this.minutes.set(0);
+            this.seconds.set(0);
         } else {
             this.time = time;
             this.timeLimit = time;
@@ -64,12 +67,7 @@ public class ClockTimerThread extends Thread{
     }
 
     public synchronized void resetTimer(){
-        this.suspended.setValue(true);
-        if(this.increase){
-            this.time = 0;
-        } else {
-            this.time = this.timeLimit;
-        }
+        setTime(this.timeLimit);
     }
 
     public synchronized void timerPause(){

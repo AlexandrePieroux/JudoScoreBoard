@@ -23,10 +23,10 @@ public final class DataManager {
     private Integer idCounter = 0;
     private ObservableList<CombatRecord> combats = FXCollections.observableArrayList();
     private SimpleDateFormat dateFormat = new SimpleDateFormat("HH:mm:ss - dd-MM-yyyy");
+    private ResourceBundle resourceBundle = ResourceBundle.getBundle("resource.Resource");
 
     private DataManager(){
         super();
-
     }
 
     public static DataManager getInstance(){
@@ -43,10 +43,9 @@ public final class DataManager {
 
     public void toJsonFile(){
         Gson gson = new Gson();
-        ResourceBundle resourceBundle = ResourceBundle.getBundle("resource.Resource");
         FileWriter fileWriter;
         try {
-            fileWriter = new FileWriter(resourceBundle.getString("data_historyFile"), true);
+            fileWriter = new FileWriter(this.resourceBundle.getString("data_historyFile"), true);
             JsonWriter jsonWriter = new JsonWriter(fileWriter);
             jsonWriter.setIndent("  ");
             jsonWriter.beginArray();
@@ -63,21 +62,22 @@ public final class DataManager {
     }
 
     private CombatRecord getCurrentCombatRecord(Controller controller){
+
         CombatRecord currentCombat = new CombatRecord();
         currentCombat.setId(this.idCounter++);
         currentCombat.setRemainingTime(controller.combatTimerMinutesProperty().get() * 60 +
                                        controller.combatTimerSecondsProperty().get());
 
         currentCombat.setWinnerName(controller.winnerJudokaNameProperty().get());
-        currentCombat.setWinnerBy(controller.getWinningCondition());
+        currentCombat.setWinnerBy(this.resourceBundle.getString(controller.getWinningCondition()));
 
         currentCombat.setCategory(controller.getWeight());
 
         String gender;
         if(controller.genderProperty().get())
-            gender = "M";
+            gender = this.resourceBundle.getString("LABEL_male");
         else
-            gender = "F";
+            gender = this.resourceBundle.getString("LABEL_female");
 
         currentCombat.setGender(gender);
 

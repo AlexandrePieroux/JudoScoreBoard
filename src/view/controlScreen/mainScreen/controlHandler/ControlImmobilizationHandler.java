@@ -19,10 +19,10 @@ public class ControlImmobilizationHandler implements EventHandler<MouseEvent> {
 
     @Override
     public void handle(MouseEvent event) {
-        if(!this.controller.immobilizationTimerSuspendedProperty().get()){
+        if(this.controller.immobilizationTimerSuspendedProperty().not().get()){
             this.controller.immobilizationTimerPause();
             this.controller.combatTimerResume();
-        } else if(!this.controller.combatTimerSuspendedProperty().get()) {
+        } else if(this.controller.combatTimerSuspendedProperty().not().get()) {
             this.controller.combatTimerPause();
             this.controller.immobilizationTimerReset();
             this.controller.immobilizationTimerResume();
