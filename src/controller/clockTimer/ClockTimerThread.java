@@ -117,10 +117,10 @@ public class ClockTimerThread extends Thread{
 
         if(this.time < 0){
             this.time = 0;
-            this.timerPause();
+            this.init = false;
         } else if(this.increase && (this.time >= this.timeLimit)){
             this.time = this.timeLimit;
-            this.timerPause();
+            this.init = false;
         }
 
         this.minutes.set((int)this.time/60000);

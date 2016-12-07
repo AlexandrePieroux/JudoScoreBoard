@@ -5,14 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98d53426-2e42-46e1-a572-03eab8f1a465" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/controller/clockTimer/ClockTimerThread.class" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/controller/clockTimer/ClockTimerThread.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/historyScreen/HistoryController.class" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/historyScreen/HistoryController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.class" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/winnerScreen/WinnerScreenController.class" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/winnerScreen/WinnerScreenController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource_en.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource_fr.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource_fr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource_fr_BE.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/Resource_fr_BE.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource_en.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource_fr.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource_fr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource_fr_BE.properties" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/resource/Resource_fr_BE.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/winnerScreen/Layout.fxml" afterPath="$PROJECT_DIR$/out/production/JudoScoreBoard/view/controlScreen/winnerScreen/Layout.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java" afterPath="$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/model/dataManager/DataManager.java" afterPath="$PROJECT_DIR$/src/model/dataManager/DataManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/controlScreen/historyScreen/HistoryController.java" afterPath="$PROJECT_DIR$/src/view/controlScreen/historyScreen/HistoryController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/Resource.properties" afterPath="$PROJECT_DIR$/src/resource/Resource.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/Resource_en.properties" afterPath="$PROJECT_DIR$/src/resource/Resource_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/Resource_fr.properties" afterPath="$PROJECT_DIR$/src/resource/Resource_fr.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/resource/Resource_fr_BE.properties" afterPath="$PROJECT_DIR$/src/resource/Resource_fr_BE.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java" afterPath="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationSuspensionHandler.java" afterPath="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationSuspensionHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/Layout.fxml" afterPath="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/Layout.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/WinnerScreenController.java" afterPath="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/WinnerScreenController.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,29 +44,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataManager.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/model/dataManager/DataManager.java">
+      <file leaf-file-name="ControlImmobilizationHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#854#855#0" expanded="true" />
-                <element signature="e#877#878#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="300">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Resource.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/resource/Resource.properties">
-          <provider selected="true" editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+      <file leaf-file-name="ControlImmobilizationSuspensionHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationSuspensionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ControlScreenController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/ControlScreenController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClockTimerThread.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="662">
+              <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+              <folding>
+                <element signature="e#2009#2010#0" expanded="true" />
+                <element signature="e#2054#2055#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -84,7 +113,6 @@
         <option value="$PROJECT_DIR$/src/resource/Resource_fr.properties" />
         <option value="$PROJECT_DIR$/src/resource/Resource_fr_BE.properties" />
         <option value="$PROJECT_DIR$/src/model/winningCondition.java" />
-        <option value="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/WinnerScreenController.java" />
         <option value="$PROJECT_DIR$/src/model/CombatRecord.java" />
         <option value="$PROJECT_DIR$/src/model/DataManager/DataManager.java" />
         <option value="$PROJECT_DIR$/src/model/JudokaRecord.java" />
@@ -101,23 +129,27 @@
         <option value="$PROJECT_DIR$/src/view/configurationScreen/configHandler/ConfigOkHandler.java" />
         <option value="$PROJECT_DIR$/src/view/configurationScreen/ConfigScreenController.java" />
         <option value="$PROJECT_DIR$/src/view/controlScreen/historyScreen/historyHandler/HistorySaveHandler.java" />
-        <option value="$PROJECT_DIR$/src/resource/Resource.properties" />
         <option value="$PROJECT_DIR$/src/view/controlScreen/historyScreen/Layout.fxml" />
         <option value="$PROJECT_DIR$/src/model/records/CombatRecord.java" />
-        <option value="$PROJECT_DIR$/combat_data.json" />
         <option value="$PROJECT_DIR$/src/view/controlScreen/mainScreen/ControlScreenController.java" />
         <option value="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/winningScreen/ScreenOkWinningHandler.java" />
         <option value="$PROJECT_DIR$/src/view/controlScreen/newCombatForm/newCombatHandler/ScreenOkFormHandler.java" />
         <option value="$PROJECT_DIR$/src/view/configurationScreen/Layout.fxml" />
-        <option value="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java" />
         <option value="$PROJECT_DIR$/src/view/controlScreen/historyScreen/HistoryController.java" />
-        <option value="$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java" />
         <option value="$PROJECT_DIR$/src/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/model/dataManager/DataManager.java" />
+        <option value="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java" />
+        <option value="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/Layout.fxml" />
+        <option value="$PROJECT_DIR$/src/view/controlScreen/winnerScreen/WinnerScreenController.java" />
+        <option value="$PROJECT_DIR$/combat_data.json" />
+        <option value="$PROJECT_DIR$/src/resource/Resource.properties" />
+        <option value="$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationSuspensionHandler.java" />
+        <option value="$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="-1" />
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="873" />
@@ -140,6 +172,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -528,46 +563,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resource Bundle 'Resource'" />
-              <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JudoScoreBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JudoScoreBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resource" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JudoScoreBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="JudoScoreBoard" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -634,11 +629,30 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JudoScoreBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="JudoScoreBoard" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="clockTimer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -890,7 +904,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="873" extended-state="6" />
+    <frame x="-1" y="23" width="1440" height="873" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -900,15 +914,16 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32711443" sideWeight="0.50277776" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32711443" sideWeight="0.49722221" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26805556" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -920,7 +935,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -935,14 +949,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/ControlScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/controlScreen/historyScreen/Layout.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
@@ -970,8 +976,6 @@
           <caret line="55" column="99" lean-forward="false" selection-start-line="55" selection-start-column="99" selection-end-line="55" selection-end-column="99" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -981,22 +985,21 @@
         <state relative-caret-position="390">
           <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8296#8297#0" expanded="false" />
-            <element signature="e#8352#8353#0" expanded="false" />
+            <element signature="e#7902#7903#0" expanded="true" />
+            <element signature="e#7968#7969#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resource/Resource.properties">
-      <provider selected="true" editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
+      </provider>
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/ControlScreenController.java">
@@ -1034,8 +1037,6 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1045,9 +1046,8 @@
         <state relative-caret-position="390">
           <caret line="27" column="5" lean-forward="false" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#8296#8297#0" expanded="false" />
-            <element signature="e#8352#8353#0" expanded="false" />
+            <element signature="e#7902#7903#0" expanded="true" />
+            <element signature="e#7968#7969#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1069,25 +1069,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/resource/Resource_fr_BE.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-75">
           <caret line="4" column="33" lean-forward="false" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
           <folding />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/Resource_fr.properties">
       <provider editor-type-id="ResourceBundle">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/Resource_fr.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
           <caret line="31" column="86" lean-forward="false" selection-start-line="31" selection-start-column="86" selection-end-line="31" selection-end-column="86" />
           <folding />
         </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/winningCondition.java" />
@@ -1149,17 +1149,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/winnerScreen/Layout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="48" lean-forward="false" selection-start-line="18" selection-start-column="23" selection-end-line="18" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/configurationScreen/configHandler/ConfigOkHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="722">
@@ -1214,23 +1203,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/winnerScreen/WinnerScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="90" column="44" lean-forward="false" selection-start-line="90" selection-start-column="44" selection-end-line="90" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/combat_data.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/records/CombatRecord.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
@@ -1256,15 +1228,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="36" column="33" lean-forward="true" selection-start-line="36" selection-start-column="33" selection-end-line="36" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/winnerScreen/winningScreen/ScreenOkWinningHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1272,15 +1235,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlCombatStartHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1307,7 +1261,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-315">
           <caret line="8" column="19" lean-forward="false" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1315,22 +1268,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="617">
           <caret line="45" column="59" lean-forward="false" selection-start-line="45" selection-start-column="59" selection-end-line="45" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="70" lean-forward="false" selection-start-line="24" selection-start-column="70" selection-end-line="24" selection-end-column="70" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/ControlScreenController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="171" column="70" lean-forward="false" selection-start-line="171" selection-start-column="70" selection-end-line="171" selection-end-column="70" />
           <folding />
         </state>
       </provider>
@@ -1353,25 +1290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/historyScreen/Layout.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="21" column="84" lean-forward="false" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/clockTimer/ClockTimer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -1383,36 +1301,120 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/clockTimer/ClockTimer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="69" column="8" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="8" />
-          <folding>
-            <element signature="e#1926#1927#0" expanded="true" />
-            <element signature="e#1965#1966#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="105">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/resource/Resource.properties">
-      <provider selected="true" editor-type-id="ResourceBundle">
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlCombatStartHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/winnerScreen/Layout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="42" lean-forward="false" selection-start-line="16" selection-start-column="42" selection-end-line="16" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/winnerScreen/WinnerScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="82" column="78" lean-forward="false" selection-start-line="82" selection-start-column="78" selection-end-line="82" selection-end-column="78" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/winnerScreen/winningScreen/ScreenOkWinningHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/combat_data.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/historyScreen/Layout.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="69" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="69" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/model/dataManager/DataManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="75" column="22" lean-forward="true" selection-start-line="75" selection-start-column="22" selection-end-line="75" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="71" column="74" lean-forward="false" selection-start-line="71" selection-start-column="64" selection-end-line="71" selection-end-column="74" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#877#878#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/resource/Resource.properties">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="21" lean-forward="false" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/controlHandler/ControlImmobilizationSuspensionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="25" column="48" lean-forward="false" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/controlScreen/mainScreen/ControlScreenController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="103" column="0" lean-forward="false" selection-start-line="103" selection-start-column="0" selection-end-line="103" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/clockTimer/ClockTimerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+          <folding>
+            <element signature="e#2009#2010#0" expanded="true" />
+            <element signature="e#2054#2055#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -55,15 +55,15 @@ public class WinnerScreenController {
 
 
         // Default ippon option
-        RadioButton ippon = new RadioButton("Ippon");
-        ippon.setUserData("Ippon");
+        RadioButton ippon = new RadioButton(bundle.getString("POINT_ippon"));
+        ippon.setUserData("POINT_ippon");
         ippon.setToggleGroup(this.group);
         this.getWinninOptions().getChildren().add(ippon);
 
         // Waza-Ari Awazate Ippon
         if(this.controller.winnerJudokaWazaAriProperty().get() == 1){
-            RadioButton wazaAriWazate = new RadioButton("Waza-Ari Awazate Ippon");
-            wazaAriWazate.setUserData("Waza-Ari Awazate Ippon");
+            RadioButton wazaAriWazate = new RadioButton(bundle.getString("POINT_waai"));
+            wazaAriWazate.setUserData("POINT_waai");
             wazaAriWazate.setToggleGroup(this.group);
             this.getWinninOptions().getChildren().add(wazaAriWazate);
         }
@@ -71,8 +71,8 @@ public class WinnerScreenController {
         // Hansoku Make
         if(this.controller.firstJudokaShidoProperty().get() == 3 ||
                 this.controller.secondJudokaShidoProperty().get() == 3) {
-            RadioButton hansokuMake = new RadioButton("Hansoku Make");
-            hansokuMake.setUserData("Hansoku Make");
+            RadioButton hansokuMake = new RadioButton(bundle.getString("DISQUALIFIED"));
+            hansokuMake.setUserData("DISQUALIFIED");
             hansokuMake.setToggleGroup(this.group);
             this.getWinninOptions().getChildren().add(hansokuMake);
         }

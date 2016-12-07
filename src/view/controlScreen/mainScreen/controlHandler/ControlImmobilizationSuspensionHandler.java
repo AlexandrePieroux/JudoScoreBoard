@@ -19,9 +19,11 @@ public class ControlImmobilizationSuspensionHandler implements EventHandler<Mous
     public void handle(MouseEvent event) {
         if(!this.controller.immobilizationTimerSuspendedProperty().get()){
             this.controller.immobilizationTimerPause();
+            this.controller.combatTimerPause();
             this.controller.suspendCombat();
         } else if(this.controller.combatSuspendedProperty().get()){
             this.controller.immobilizationTimerResume();
+            this.controller.combatTimerResume();
             this.controller.resumeCombat();
         }
     }

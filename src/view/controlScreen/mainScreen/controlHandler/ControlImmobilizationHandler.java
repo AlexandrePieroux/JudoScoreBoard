@@ -23,7 +23,6 @@ public class ControlImmobilizationHandler implements EventHandler<MouseEvent> {
             this.controller.immobilizationTimerPause();
             this.controller.combatTimerResume();
         } else if(this.controller.combatTimerSuspendedProperty().not().get()) {
-            this.controller.combatTimerPause();
             this.controller.immobilizationTimerReset();
             this.controller.immobilizationTimerResume();
         }
