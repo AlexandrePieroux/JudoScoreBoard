@@ -34,6 +34,7 @@ public class ConfigScreenController {
         // Get evey screens available
         ObservableList<Screen> screensList = Screen.getScreens();
 
+        // TODO uncomment this to test with a second screen
         /*if(screensList.size() == 1) {
             Label errorMsg = new Label(ResourceBundle.getBundle("resource.Resource")
                     .getString("ERROR_no_enough_screens"));
