@@ -72,8 +72,6 @@ public class ConfigOkHandler implements EventHandler<MouseEvent> {
         Rectangle2D secondaryScreenbounds = this.selectedScreen.getDisplayScreen().getBounds();
         displayScreen.setX(secondaryScreenbounds.getMinX());
         displayScreen.setY(secondaryScreenbounds.getMinY());
-        // TODO fullscreen bug to fix when bad rectangle
-        //displayScreen.setFullScreen(true);
         displayScreen.setWidth(secondaryScreenbounds.getWidth());
         displayScreen.setHeight(secondaryScreenbounds.getHeight());
         displayScreen.show();
