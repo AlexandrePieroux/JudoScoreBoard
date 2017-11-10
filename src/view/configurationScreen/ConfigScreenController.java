@@ -34,13 +34,12 @@ public class ConfigScreenController {
         // Get evey screens available
         ObservableList<Screen> screensList = Screen.getScreens();
 
-        // TODO uncomment this to test with a second screen
-        /*if(screensList.size() == 1) {
+        if(screensList.size() == 1) {
             Label errorMsg = new Label(ResourceBundle.getBundle("resource.Resource")
                     .getString("ERROR_no_enough_screens"));
             errorMsg.getStyleClass().add("error_msg");
             this.vboxScreens.getChildren().add(errorMsg);
-        } else*/ {
+        } else {
             // Selection message
             ResourceBundle bundle = ResourceBundle.getBundle("resource.Resource");
             Label selectionMsg = new Label(bundle.getString("MSG_screen_selection"));
@@ -58,8 +57,8 @@ public class ConfigScreenController {
 
             for (int i = 0; i < screensList.size(); ++i){
                 Screen s = screensList.get(i);
-                if(s.equals(primary)){
-                    Hyperlink display = new Hyperlink((int) s.getBounds().getMaxX() + "x" + (int) s.getBounds().getMaxY());
+                if(!s.equals(primary)){
+                    Hyperlink display = new Hyperlink((int) s.getBounds().getWidth() + "x" + (int) s.getBounds().getHeight());
                     display.setId(Integer.toString(i));
                     display.getStyleClass().add("display");
                     display.setOnMouseClicked(selectionHandler);

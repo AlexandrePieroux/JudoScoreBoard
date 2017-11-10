@@ -61,6 +61,7 @@ public class ConfigOkHandler implements EventHandler<MouseEvent> {
         } catch (IOException e1) {
             e1.printStackTrace();
         }
+        ownerStage.hide();
 
         // Load the display screen
         DisplayScreenController displayScreenController = displayScreenLoader.getController();
@@ -71,7 +72,12 @@ public class ConfigOkHandler implements EventHandler<MouseEvent> {
         Rectangle2D secondaryScreenbounds = this.selectedScreen.getDisplayScreen().getBounds();
         displayScreen.setX(secondaryScreenbounds.getMinX());
         displayScreen.setY(secondaryScreenbounds.getMinY());
-        displayScreen.setFullScreen(true);
+        // TODO fullscreen bug to fix when bad rectangle
+        //displayScreen.setFullScreen(true);
+        displayScreen.setWidth(secondaryScreenbounds.getWidth());
+        displayScreen.setHeight(secondaryScreenbounds.getHeight());
+        displayScreen.show();
+
 
         // Load the control screen
         ControlScreenController controlScreenController = controlScreenLoader.getController();
@@ -80,9 +86,7 @@ public class ConfigOkHandler implements EventHandler<MouseEvent> {
         controlScreen.initStyle(StageStyle.UNDECORATED);
         controlScreenController.init(this.controller);
         controlScreen.onCloseRequestProperty().setValue((WindowEvent e) -> Platform.exit());
-
-        ownerStage.hide();
-        //displayScreen.show();
         controlScreen.show();
+
     }
 }
